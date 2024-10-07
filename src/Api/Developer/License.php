@@ -6,6 +6,7 @@ namespace SergeR\WebasystAccountSDK\Api\Developer;
 use Http\Client\Exception;
 use InvalidArgumentException;
 use SergeR\WebasystAccountSDK\Api\AbstractApi;
+use SergeR\WebasystAccountSDK\Exceptions\HttpException;
 
 final class License extends AbstractApi
 {
@@ -13,6 +14,7 @@ final class License extends AbstractApi
 
     /**
      * @throws Exception
+     * @throws HttpException
      */
     public function all(string $domain = null, $installer_id = null): array
     {
@@ -22,6 +24,7 @@ final class License extends AbstractApi
 
     /**
      * @throws Exception
+     * @throws HttpException
      */
     public function get(string $product, string $domain = null, $installer_id = null): array
     {

@@ -6,6 +6,7 @@ namespace SergeR\WebasystAccountSDK\Api\Developer;
 use Http\Client\Exception;
 use SergeR\WebasystAccountSDK\Api\AbstractApi;
 use SergeR\WebasystAccountSDK\Contracts\Developer\PromocodeInterface;
+use SergeR\WebasystAccountSDK\Exceptions\HttpException;
 
 final class Promocode extends AbstractApi
 {
@@ -13,6 +14,7 @@ final class Promocode extends AbstractApi
 
     /**
      * @throws Exception
+     * @throws HttpException
      */
     public function all(): array
     {
@@ -21,6 +23,7 @@ final class Promocode extends AbstractApi
 
     /**
      * @throws Exception
+     * @throws HttpException
      */
     public function get(string $code): array
     {
@@ -32,6 +35,7 @@ final class Promocode extends AbstractApi
 
     /**
      * @throws Exception
+     * @throws HttpException
      */
     public function create(PromocodeInterface $promocode): array|string
     {
@@ -56,6 +60,7 @@ final class Promocode extends AbstractApi
 
     /**
      * @throws Exception
+     * @throws HttpException
      */
     public function delete(string $code): array
     {

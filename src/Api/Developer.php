@@ -7,12 +7,14 @@ use Http\Client\Exception;
 use InvalidArgumentException;
 use SergeR\WebasystAccountSDK\Api\Developer\License;
 use SergeR\WebasystAccountSDK\Api\Developer\Promocode;
+use SergeR\WebasystAccountSDK\Exceptions\HttpException;
 
 final class Developer extends AbstractApi
 {
     /**
      * @return array
      * @throws Exception
+     * @throws HttpException
      */
     public function balance(): array
     {
@@ -21,6 +23,7 @@ final class Developer extends AbstractApi
 
     /**
      * @throws Exception
+     * @throws HttpException
      */
     public function transactions(int $count = null, int $offset = null): array
     {
@@ -42,6 +45,7 @@ final class Developer extends AbstractApi
 
     /**
      * @throws Exception
+     * @throws HttpException
      */
     public function licenses(string $domain = null, string $installer_id = null): array
     {
@@ -50,6 +54,7 @@ final class Developer extends AbstractApi
 
     /**
      * @throws Exception
+     * @throws HttpException
      */
     public function order(int $order_id): array
     {
@@ -63,6 +68,7 @@ final class Developer extends AbstractApi
 
     /**
      * @throws Exception
+     * @throws HttpException
      */
     public function promocodes(): array
     {
@@ -71,6 +77,7 @@ final class Developer extends AbstractApi
 
     /**
      * @throws Exception
+     * @throws HttpException
      */
     public function products(): array
     {

@@ -5,6 +5,7 @@ namespace SergeR\WebasystAccountSDK\Api;
 
 use Http\Client\Exception;
 use SergeR\WebasystAccountSDK\Client;
+use SergeR\WebasystAccountSDK\Exceptions\HttpException;
 use SergeR\WebasystAccountSDK\Message\ResponseMediator;
 
 class AbstractApi
@@ -20,6 +21,7 @@ class AbstractApi
      * Performs an HTTP GET request to an API method
      *
      * @throws Exception
+     * @throws HttpException
      */
     protected function _get(string $path, array $parameters = [], array $requestHeaders = []): string|array
     {
@@ -34,6 +36,7 @@ class AbstractApi
 
     /**
      * @throws Exception
+     * @throws HttpException
      */
     protected function _post(string $path, array $parameters = [], array $requestHeaders = []): string|array
     {
@@ -50,6 +53,7 @@ class AbstractApi
 
     /**
      * @throws Exception
+     * @throws HttpException
      */
     protected function _delete(string $path, array $parameters = [], array $requestHeaders = []): string|array
     {
