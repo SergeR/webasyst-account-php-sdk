@@ -1,0 +1,25 @@
+{
+    "require": {
+        "php": "^8.2",
+        "psr/http-factory": "^1.1",
+        "psr/http-client": "^1.0",
+        "php-http/client-common": "^2.7"
+    },
+    "require-dev": {
+        "php-http/curl-client": "^2.3",
+        "laminas/laminas-diactoros": "^3.4"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        },
+        "platform": {
+            "php": "8.2"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "\\SergeR\\WebasystAccountSDK\\": "src"
+        }
+    }
+}
