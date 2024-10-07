@@ -2,7 +2,7 @@
     "name": "serger/webasyst-account-sdk",
     "type": "library",
     "licanse": "MIT",
-    "description": "SDK to work wit Webasyst Profile API",
+    "description": "SDK to work with Webasyst Profile API",
     "keywords": ["sdk", "webasyst"],
     "authors": [
         {
