@@ -1,4 +1,15 @@
 {
+    "name": "serger/webasyst-account-sdk",
+    "type": "library",
+    "licanse": "MIT",
+    "description": "SDK to work wit Webasyst Profile API",
+    "keywords": ["sdk", "webasyst"],
+    "authors": [
+        {
+            "name": "Serge Rodovnichenko",
+            "email": "sergerod@gmail.com"
+        }
+    ],
     "require": {
         "php": "^8.2",
         "psr/http-factory": "^1.1",
@@ -12,9 +23,6 @@
     "config": {
         "allow-plugins": {
             "php-http/discovery": true
-        },
-        "platform": {
-            "php": "8.2"
         }
     },
     "autoload": {
